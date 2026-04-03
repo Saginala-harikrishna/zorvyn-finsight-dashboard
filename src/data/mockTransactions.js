@@ -23,6 +23,22 @@ const mockTransactions = [
     category: "Shopping",
     type: "expense",
   },
+  {
+  id: 4,
+  date: "2026-04-04",
+  merchant: "Uber",
+  amount: 700,
+  category: "Travel",
+  type: "expense",
+},
+{
+  id: 5,
+  date: "2026-04-05",
+  merchant: "Electricity Bill",
+  amount: 1200,
+  category: "Bills",
+  type: "expense",
+}
 ];
 
 export default mockTransactions;
