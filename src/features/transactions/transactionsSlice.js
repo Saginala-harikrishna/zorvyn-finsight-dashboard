@@ -1,9 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import mockTransactions from "../../data/mockTransactions";
 
+const savedTransactions =
+  JSON.parse(localStorage.getItem("transactions")) ||
+  mockTransactions;
+
 const initialState = {
-  transactions: mockTransactions,
-  filteredTransactions: mockTransactions,
+  transactions: savedTransactions,
+  filteredTransactions: savedTransactions,
   searchTerm: "",
   categoryFilter: "All",
 };
